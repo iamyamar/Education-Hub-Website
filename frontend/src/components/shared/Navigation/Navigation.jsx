@@ -1,10 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./Navigation.module.css";
 
 const Navigation = () => {
+  const brandStyle = {
+    color: "#fff",
+    textDecoration: "none",
+    fontWeight: "bold",
+    fontSize: "20px",
+    display: "flex",
+    alignItems: "center",
+  };
+  const logoText = {
+    marginLeft: "10px",
+  };
   return (
-    <div>
-      <h1>Navigation</h1>
-    </div>
+    <nav className={`${styles.navbar} container`}>
+      <Link style={brandStyle} to="/">
+        <img src="/images/mainlogo.png" alt="logo" />
+        <span style={logoText}>Educationhub</span>
+      </Link>
+    </nav>
   );
 };
 

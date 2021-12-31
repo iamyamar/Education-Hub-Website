@@ -27,3 +27,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+body {
+  background: #121212;
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
